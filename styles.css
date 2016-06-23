@@ -1,0 +1,26 @@
+html, body {
+	margin: 0;
+	height: 100%;
+	background-image: linear-gradient(rgb(192, 230, 255) 43%, rgb(41, 128, 185) 100%);
+	background-image: -moz-linear-gradient(rgb(192, 230, 255) 43%, rgb(41, 128, 185) 100%);
+	background-image: -webkit-linear-gradient(rgb(192, 230, 255) 43%, rgb(41, 128, 185) 100%);
+	background-image: -o-linear-gradient(rgb(192, 230, 255) 43%, rgb(41, 128, 185) 100%);
+	background-image: -ms-linear-gradient(rgb(192, 230, 255) 43%, rgb(41, 128, 185) 100%);
+}
+
+html {
+    font-family: 'Walter Turncoat', helvetica, sans-serif;
+ }
+
+ .title {
+ 	    font-family: 'Amatic SC', helvetica, sans-serif;
+       	color: white;
+ }
+
+label.inlineLabel {
+    display:inline-block;       /* for IE7*/
+    float: left;
+    text-align: left;
+    width: 100%;
+    font-size: 2.5em;
+}

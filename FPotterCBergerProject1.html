@@ -1,0 +1,130 @@
+<!--Include the doctype declaration and language required for css materialize class-->
+<!DOCTYPE html>
+<html lang="en">
+	
+    <head>
+	     <!--Import materialize.css-->
+	     <link type="text/css" rel="stylesheet" href="materialize.css">
+	     <!--animations for css-->
+	     <link type="text/css" rel="stylesheet" href="animate.css">
+	     <!--Our css sheet-->
+	     <link type="text/css" rel="stylesheet" href="styles.css">
+	     <!--Font family for title-->
+	     <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400, 700' rel='stylesheet' type='text/css'>
+	     <!--Font family for other text-->
+	     <link href='https://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
+	     <!--Fontawesome for icons-->
+	     <script src="https://use.fontawesome.com/e18a4f93fb.js"></script>
+
+	     <title>Mathmatical Adventure Game</title>
+	</head>
+
+	<body>
+		<!--Title of game-->
+		<div class="row">
+			<div class="col s2 m2 l2">&nbsp;</div>
+			<div class="col s8 m8 center-align">
+				<span class="title"><h2><b>Mathematical Adventure Game</b></h2></span>
+			</div>
+			<div class="col s2 m2 l2"></div>
+		</div>
+
+		<!--Holds the card content-->
+		<div class="row">
+			<div class="col s2 m2 l2">&nbsp;</div>
+			<div class="col s8 m8 l8">
+					<div class="container">
+						<div class="card white opacity">
+							<div class="card-content">
+								<div class="row">
+									<div class="col s1 m1 l1">&nbsp;</div>
+									
+									<div class="col s10 m10 l10 center-align">
+										<!--blankspace-->
+										<div class="row">
+											<div id="subtitleRight"
+											class="col s12 m12 l12 right-align">
+											&nbsp;
+											</div>
+										</div>
+
+										<input id="name" 
+										placeholder="Enter your name" 
+										type="text" 
+										class="animated bounceInDown">
+										</input>
+									
+										<div class="row valign-wrapper">
+											<div class="col s8">&nbsp;	
+											<label id="equation" 
+											for="answer" 
+											class="hide"></label></div>
+											<div class="col s1">&nbsp;</div>
+											<div class="col s3">&nbsp;
+											<input id="answer" 
+											type="text"  
+											onkeydown="keyPressEnter(this, event)" 
+											class="hide"></input></div>
+										</div>
+
+										<!--blank space-->
+										<div class="row">
+											<div class="col s12 m12 l12">
+											<div id="message" 
+											class="show">Choose your age</div>
+										</div>
+
+										<div class="row">
+											<div class="col s4 m4 l4">&nbsp;
+												<input id="easy"
+												type="button" 
+												value="5-7"  
+												onclick="" 
+												class="hide">
+												
+												<input id="quit"
+												type="button" 
+												value="QUIT"  
+												onclick="endGame()" 
+												class="hide">
+											</div>
+												
+											<div class="col s4 m4 l4">&nbsp;
+												<input id="playAgain"
+												type="button" 
+												value="Play Again" 
+												class="hide"
+												onclick="">
+											</div>
+												
+											<div class="col s4 m4 l4">&nbsp;
+												<input id="hard" 
+												type="button" 
+												value="8-10"  
+												onclick="playHard()" 
+												class="hide">
+													
+												<input id="next"
+												type="button" 
+												value="NEXT"  
+												onclick="nextButton()" 
+												class="hide">
+											</div>
+										</div>
+									<div class="col s1 m1 l1">&nbsp;</div>
+								</div> <!--row-->
+							</div><!--card-content-->
+						</div><!--card-->
+					</div><!--container-->
+				</div><!--s8 m8 l8-->
+			<div class="col s2 m2 l2">&nbsp;</div>
+		</div><!--row-->
+
+		<!--Import jQuery before materialize.js-->
+	    <script type="text/javascript" 
+	    src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+	    <script type="text/javascript" src="materialize.min.js"></script>
+	    <script type="text/javascript" src="FPotterCBergerProject1.js"></script>
+	</body>
+</html>
